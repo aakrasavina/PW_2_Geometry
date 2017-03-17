@@ -1,3 +1,5 @@
+//Вариант 1
+//Реализовать составную геометрию представленную на рисунке
 
 
 #include "DetGeometry.hh"
@@ -16,7 +18,7 @@ DetGeometry::DetGeometry() {
 DetGeometry::~DetGeometry() {}
 
 G4VPhysicalVolume* DetGeometry::Construct(){
-
+    G4Material * material       = nist->FindOrBuildMaterial("G4_Fe");
 
     return physWorld;
 }
